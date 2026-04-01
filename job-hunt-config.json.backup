@@ -1,0 +1,30 @@
+{
+  "outputDir": "/Users/kadmin/Desktop/Focus/Projects/01_Career_and_Income/JobQueue",
+  "scoreThreshold": 35,
+  "datePosted": "3days",
+  "searchQueries": {
+    "security": [
+      "endpoint security specialist",
+      "MDM engineer",
+      "device management engineer",
+      "cybersecurity engineer remote",
+      "security operations engineer",
+      "identity security engineer"
+    ],
+    "pm": [
+      "security product manager",
+      "MDM product manager",
+      "IT platform product manager",
+      "enterprise security product manager",
+      "device lifecycle product manager",
+      "IT product manager remote"
+    ]
+  },
+  "filters": {
+    "remote": true,
+    "minSalary": 110000,
+    "excludeEntryLevel": true,
+    "excludeContract": true
+  },
+  "_note": "API keys stored in macOS Keychain. See lib/keychain.mjs"
+}

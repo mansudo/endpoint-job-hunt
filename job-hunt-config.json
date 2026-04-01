@@ -1,0 +1,50 @@
+{
+  "outputDir": "/Users/kadmin/Desktop/Focus/Projects/01_Career_and_Income/JobQueue",
+  "scoreThreshold": 35,
+  "datePosted": "3days",
+  "searchQueries": {
+    "security": [
+      "endpoint security specialist",
+      "MDM engineer",
+      "device management engineer",
+      "cybersecurity engineer remote",
+      "security operations engineer",
+      "identity security engineer"
+    ],
+    "pm": [
+      "security product manager",
+      "MDM product manager",
+      "IT platform product manager",
+      "enterprise security product manager",
+      "device lifecycle product manager",
+      "IT product manager remote"
+    ],
+    "grc": [
+      "GRC analyst remote",
+      "risk analyst cybersecurity",
+      "compliance engineer security",
+      "security governance analyst",
+      "IT risk management",
+      "cyber risk analyst",
+      "security compliance specialist",
+      "information security risk"
+    ],
+    "tam": [
+      "Technical Account Manager",
+      "Technical Account Manager remote",
+      "TAM security",
+      "Technical Account Manager cybersecurity",
+      "Technical Account Manager enterprise",
+      "Senior Technical Account Manager",
+      "TAM remote",
+      "Technical Customer Success Manager"
+    ]
+  },
+  "filters": {
+    "remote": true,
+    "minSalary": 110000,
+    "excludeEntryLevel": true,
+    "excludeContract": true
+  },
+  "_note": "API keys stored in macOS Keychain. See lib/keychain.mjs"
+}

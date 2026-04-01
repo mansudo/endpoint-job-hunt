@@ -1,0 +1,5 @@
+node_modules/
+linkedin-cookies.json
+JobQueue/
+.env
+*.log
