@@ -142,8 +142,13 @@ function buildTelegramDigest(dateStr, stats, topJobs) {
   for (const j of top5) {
     const sal = j.salary ? ` · $${Math.round(j.salary / 1000)}k` : '';
     const pdf = j.hasPdf ? ' · PDF ✓' : '';
-    const src = j.source === 'linkedin' ? ' · LI' : '';
+    const src = j.source === 'linkedin' ? ' · LI' : j.source === 'dice' ? ' · Dice' : '';
     lines.push(`• [${j.company} — ${j.title}](${j.applyUrl})${sal}${src}${pdf}`);
+    // Show XYZ achievement bullets if tailoring produced them
+    const bullets = j.tailoring?.achievementBullets;
+    if (bullets && bullets.length > 0) {
+      lines.push(`  _↳ ${bullets[0]}_`);
+    }
   }
 
   return lines.join('\n');
@@ -388,6 +393,7 @@ async function main() {
             hasPdf:     !!resumePdfUrl,
             recommend:  review?.recommendation || 'unknown',
             source:     job.source || 'unknown',
+            tailoring:  tailored?._tailoring || null,
           });
 
           const dryTag = args.dryRun ? ' [DRY RUN]' : '';

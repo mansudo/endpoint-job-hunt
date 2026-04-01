@@ -8,7 +8,7 @@ import { chromium } from './node_modules/playwright/index.mjs';
 import { writeFileSync } from 'node:fs';
 import { homedir } from 'node:os';
 
-const COOKIE_PATH = `${homedir()}/Desktop/Focus/Projects/01_Career_and_Income/job-hunt-scripts 2/linkedin-cookies.json`;
+const COOKIE_PATH = `${homedir()}/Development/job-hunt-scripts/linkedin-cookies.json`;
 const WAIT_SECONDS = 90;
 
 const browser = await chromium.launch({ headless: false });
